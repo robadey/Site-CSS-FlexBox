@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Itens</title>
+    <style>
+        .container{
+            max-width: 500px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: yellowgreen;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex:1;
+        }
+        .flex{
+            flex:1;
+        }
+        .cente{
+            align-items: center;
+        }
+        .strectch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex:0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+<p>Center</p>
+    <sction class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3 com mais texto</div>
+        <div class="item">4 texto grande</div>
+        <div class="item">5</div>
+    </sction>
+    <p>Strectch</p>
+    <sction class="container strectch">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3 com mais texto</div>
+        <div class="item">4 texto grande</div>
+        <div class="item">5</div>
+    </sction>
+    <p>Flex Start</p>
+    <sction class="container start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3 com mais texto</div>
+        <div class="item">4 texto grande</div>
+        <div class="item">5</div>
+    </sction>
+    <p>Flex End</p>
+    <sction class="container end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3 com mais texto</div>
+        <div class="item">4 texto muito muito muito grande</div>
+        <div class="item">5</div>
+    </sction>
+    <p>Baseline</p>
+    <sction class="container baseline">
+        <div class="item"><br> 1</div>
+        <div class="item">2</div>
+        <div class="item">3 com mais texto</div>
+        <div class="item">4 texto muito muito muito grande</div>
+        <div class="item">5</div>
+    </sction>
+<h1>Column</h1>
+<p>Flex Start - Column</p>
+<sction class="container start column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3 com mais texto</div>
+    <div class="item">4 texto grande</div>
+    <div class="item">5</div>
+</sction>
+<p>Flex End - Column</p>
+<sction class="container end column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3 com mais texto</div>
+    <div class="item">4 texto muito muito muito grande</div>
+    <div class="item">5</div>
+</sction>
+<p>Center - Column</p>
+<sction class="container center column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3 com mais texto</div>
+    <div class="item">4 texto muito muito muito grande</div>
+    <div class="item">5</div>
+</sction>
+<p>baseline - Column</p>
+<sction class="container baseline column">
+    <div class="item"><br><br> 1</div>
+    <div class="item">2</div>
+    <div class="item">3 com mais texto</div>
+    <div class="item">4 texto muito muito muito grande</div>
+    <div class="item">5</div>
+</sction>
+
+<br><br>
+<p>central</p>
+<section class="container central center">
+    <div class="item"> sadasd as dasd asdasd asd asda sdasdasd asd asd asd asd asdasd asfrgdfgdf h fgh fgh d gs</div>
+</section>
+    
+</body>
+</html>
