@@ -9,22 +9,92 @@
     .container{
         height: 400px;
         max-width: 300px; ;
-        margin: 0 auto;
         display: flex;
         flex-wrap: wrap ;
-        border: 2px solid black;
+        border: 1px solid black;
     }
     .item{
         background-color: orangered;
         padding: 0 5px;
+        margin: 0 5px;
         flex: 1;
         text-align: center;
         color: white;
+        border: 2px solid black
+    }
+    .stretch{
+        align-content: stretch;
+    }
+    .center{
+        align-content: center;
+    }
+    .flex-start{
+        align-content: flex-start;
+    }
+    .flex-end{
+        align-content: flex-end;
+    }
+    .space-around{
+        align-content: space-around;
+    }
+    .space-between{
+        align-content: space-between;
     }
 </style>
 </head>
 <body>
-    <secction class="container">
+    <p>stretch</p>
+    <secction class="container stretch">
+        <div class="item">1</div>
+        <div class="item">asdas sda asdasdas asewqasd adawdsad </div>
+        <div class="item">3</div>
+        <div class="item">uhbasj sdakjsadn adskj  daskjndkad olkjnasd kjnasdasdn</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </secction>
+    <p>Center</p>
+    <secction class="container center">
+        <div class="item">1</div>
+        <div class="item">asdas sda asdasdas asewqasd adawdsad </div>
+        <div class="item">3</div>
+        <div class="item">uhbasj sdakjsadn adskjn  daskj  daskjndkad olkjnasd kjnasdasdn</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </secction>
+    <p>Flex-start</p>
+    <secction class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">asdas sda asdasdas asewqasd adawdsad </div>
+        <div class="item">3</div>
+        <div class="item">uhbasj sdakjsadn adskjn  daskj  daskjndkad olkjnasd kjnasdasdn</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </secction>
+    <p>Flex-end</p>
+        <secction class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">asdas sda asdasdas asewqasd adawdsad </div>
+        <div class="item">3</div>
+        <div class="item">uhbasj sdakjsadn adskjn  daskj  daskjndkad olkjnasd kjnasdasdn</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </secction>
+    <p>Space-Around</p>
+    <secction class="container space-around">
+        <div class="item">1</div>
+        <div class="item">asdas sda asdasdas asewqasd adawdsad </div>
+        <div class="item">3</div>
+        <div class="item">uhbasj sdakjsadn adskjn  daskj  daskjndkad olkjnasd kjnasdasdn</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </secction>
+    <p>Space-between</p>
+    <secction class="container space-between">
         <div class="item">1</div>
         <div class="item">asdas sda asdasdas asewqasd adawdsad </div>
         <div class="item">3</div>
