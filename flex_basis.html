@@ -7,7 +7,7 @@
     <title>Flex Basis</title>
     <style>
         .flex-container{
-            max-width: 300px;
+            max-width: 500px;
             border: 2px solid black;
             display: flex;
         }
@@ -29,6 +29,9 @@
         .b-0{
             flex-basis: 0;
         }
+        .w100{
+            flex-basis: 100px;
+        }
     </style>
 
 </head>
@@ -39,11 +42,19 @@
         <div class="items bauto fg-1">c</div>
         <div class="items bauto fg-1">d</div>
     </div>
+    <p>Flex container fg-2</p>
     <div class="flex-container">
-        <div class="items b-0 fg-1">a</div>
-        <div class="items b-0 fg-1">b</div>
-        <div class="items b-0 fg-1">c</div>
-        <div class="items b-0 fg-1">d</div>
+        <div class="items b-0 fg-2">a</div>
+        <div class="items b-0 fg-2">b</div>
+        <div class="items b-0 fg-2">c</div>
+        <div class="items b-0 fg-2">dddddddddddddd</div>
+    </div>
+    <p>basis com width  </p>
+    <div class="flex-container">
+        <div class="items w100 fg-2">a</div>
+        <div class="items w100 fg-2">b</div>
+        <div class="items w100 fg-2">c</div>
+        <div class="items w100 fg-2">dddddddddddddd</div>
     </div>
 </body>
 </html>
