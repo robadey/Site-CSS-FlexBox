@@ -6,26 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Align</title>
 <style>
-    .container{
+    .flex-container{
+        max-width: 300px;
         border: 1px solid black;
+        margin-bottom: 10px;
         display: flex;
-        margin: 20px;
+    }
+    .align-container{
+        align-items: center;
     }
     .item{
+        background-color: brown;
+        color: white;
+        font-size: 24px;
         text-align: center;
-        font: 20px;
-
+        margin: 5px;
     }
-    .flex{
-
+    .center{
+        align-self: center;
     }
-    .flex-container{
-        
+    .start{
+        align-self: flex-start;
+    }
+    .end{
+        align-self: flex-end;
+    }
+    .baseline{
+        align-self: baseline;
+    }
+    .stretch{
+        align-self: stretch;
+    }
+    .auto{
+        align-self: auto;
     }
 
 </style>
 </head>
 <body>
-    
+    <p>Self Align</p>
+    <section class="flex-container align-container">
+        <div class="item">sad</div>
+        <div class="item">4235 sa</div>
+        <div class="item">ass54 asd asd huy asnd asiu asnd</div>
+        <div class="item">sdasd </div>
+    </section>
+    <p>Self Align - ind</p>
+    <section class="flex-container">
+        <div class="item stretch">sad</div>
+        <div class="item auto">4235 sa</div>
+        <div class="item baseline">ass54 asd asd huy asnd asiu asnd</div>
+        <div class="item start">sdasd </div>
+    </section>
 </body>
 </html>
